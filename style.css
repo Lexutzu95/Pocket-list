@@ -1,0 +1,154 @@
+* {
+  font-family: "Permanent Marker", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  background: url("img/copybook wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header {
+  color: hsl(0, 0%, 25%);
+  font-size: 1.5rem;
+}
+
+header,
+form {
+  min-height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  border: none;
+  background-color: hsl(0, 0%, 95%);
+}
+
+form button {
+  color: hsl(120, 93%, 29%);
+  transition: 0.5s;
+}
+
+form button:hover {
+  background-color: hsl(120, 93%, 29%);
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.li-div {
+  margin: 0.4rem;
+  font-size: 1.3rem;
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 25%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 0rem 0rem 0.5rem;
+  transition: all 0.5s ease;
+}
+
+.li-div li {
+  flex: 1;
+}
+
+.check-btn,
+.remove-btn {
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.check-btn {
+  color: hsl(180, 66%, 31%);
+  transition: 0.5s;
+}
+
+.check-btn:hover {
+  background-color: hsl(180, 66%, 31%);
+  color: hsl(0, 0%, 96%);
+}
+
+.remove-btn {
+  color: hsl(0, 70%, 50%);
+  transition: 0.5s;
+}
+
+.remove-btn:hover {
+  background-color: hsl(0, 70%, 50%);
+  color: hsl(0, 0%, 96%);
+}
+
+.fa-solid fa-check,
+.fa-solid fa-xmark {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0.3rem;
+  outline: none;
+  border: none;
+  color: hsl(60, 0%, 45%);
+  width: 7rem;
+  cursor: pointer;
+}
+
+.filter-div {
+  margin: 0.7rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.filter-div::after {
+  content: "\25BC";
+  position: absolute;
+  background: hsl(0, 0%, 95%);
+  color: hsl(210, 100%, 56%);
+  top: 0;
+  right: 0;
+  padding: 0.2rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.filter-div:hover::after {
+  background: hsl(210, 100%, 56%);
+  color: hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 600px) {
+  .filter-div {
+    position: absolute;
+    top: 40%;
+    overflow: hidden;
+  }
+}
