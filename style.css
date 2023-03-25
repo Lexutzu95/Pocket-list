@@ -148,7 +148,7 @@ select {
 @media only screen and (max-width: 600px) {
   .filter-div {
     position: absolute;
-    top: 50%;
+    top: 55%;
     overflow: hidden;
   }
 }
