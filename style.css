@@ -146,9 +146,14 @@ select {
 }
 
 @media only screen and (max-width: 600px) {
-  .filter-div {
+  form {
+position: absolute;
+top: 35%;
+}
+
+.filter-div {
     position: absolute;
-    top: 50%;
+    top: 45%;
     overflow: hidden;
   }
 }
